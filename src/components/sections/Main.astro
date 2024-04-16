@@ -1,0 +1,97 @@
+---
+    import LiteYouTube from "../LiteYouTube.astro"
+---
+
+<div class="container" id="introduccion">
+    <div class="container__section">
+        <h1>Introducción a la Capacitancia</h1>
+        <div class="content">
+            <p>La capacitancia es una propiedad fundamental en electricidad y electrónica que describe la capacidad de un sistema para almacenar carga eléctrica cuando se le aplica un voltaje. Este concepto se manifiesta en dispositivos llamados condensadores, que consisten en dos conductores separados por un material dieléctrico. La capacitancia se mide en faradios (F) y es esencial para el diseño y la ingeniería de sistemas eléctricos y electrónicos.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" >
+    <div class="container__section">
+        <h1>El Desarrollo de la Capacitancia</h1>
+        <div class="content">
+            <p>El desarrollo de la capacitancia se remonta a los primeros experimentos en electricidad estática y conductividad, con importantes contribuciones de científicos como Michael Faraday. Faraday formuló la ley de capacitancia, que establece que la capacitancia de un sistema conductor-dieléctrico es igual a la carga almacenada en el conductor dividida por el voltaje aplicado. A lo largo del tiempo, se han realizado avances en la teoría electromagnética, la física de materiales y la ingeniería eléctrica para comprender y manipular la capacitancia. Esto ha llevado al diseño y la implementación de una amplia variedad de dispositivos y sistemas eléctricos y electrónicos que dependen de la capacitancia para su funcionamiento.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="container__video" id="video">
+	<div class="video">
+		<LiteYouTube
+			videoId="uccFphmYho0"
+			backgroundImage="https://i.ytimg.com/vi/uccFphmYho0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8-xNpPWmBLK43IvqbTqAmWYnrYg"
+			title="Reproducir capacitores - explicación paso a paso"
+		/>
+	</div>
+</section>
+
+<section class="container__video">
+	<div class="video">
+		<LiteYouTube
+			videoId="SY68f7Xw0AE"
+			backgroundImage="https://i.ytimg.com/vi/SY68f7Xw0AE/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB_XbYTM-bXZLFiUB8BTmSKWchdNw"
+			title="Reproducir capacitores - explicación paso a paso"
+		/>
+	</div>
+</section>
+
+<style>
+    .container {
+        position: relative;
+        margin: 50px auto;
+        max-width: 800px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--box-shadow);
+        border-top: 5px solid var(--naranja);
+        padding: 20px;
+    }
+
+    .container__section {
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        color: var(--azul-fuerte);
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    p {
+        text-wrap: pretty;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .container__video {
+        position: relative;
+        margin: 0 auto;
+        max-width: 800px;
+        overflow: hidden;
+        border: 2px solid var(--box-shadow);
+        box-shadow: 0 6px 6px -6px var(--box-shadow);
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        border-top: 5px solid var(--naranja);
+    }
+
+    .video {
+        position: relative;
+    }
+
+    @media screen and (max-width:1200px) {
+        .container, .container__video {
+            max-width: 90%;
+        }
+    }
+</style>

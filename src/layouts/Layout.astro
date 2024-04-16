@@ -1,0 +1,44 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="../../../public/logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script src="https://kit.fontawesome.com/7d06a4354f.js" crossorigin="anonymous"></script>
+		<script src="//code.tidio.co/xuxdnor1scaslqpcldosco4e4j7xo4fn.js" async></script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--naranja: #ff6900;
+		--azul: #082251;
+		--azul-fuerte: #002e67;
+		--box-shadow: #d5d5d5;
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+	body {
+		height: 200vh;
+	}
+</style>

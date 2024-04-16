@@ -1,0 +1,96 @@
+---
+
+---
+
+<div id="calculadora">
+    <div id="cal">
+        <div class="conversion">
+            <label for="capacitancia">Capacitancia (µF):</label>
+            <input type="number" id="capacitancia">
+        </div>
+        <div class="conversion">
+            <label for="voltaje">Voltaje (V):</label>
+            <input type="number" id="voltaje">
+        </div>
+        <button class="calcularCarga">Calcular carga</button>
+    </div>
+    <div id="resultado" class="conversion"></div>
+</div>
+
+<style>
+    #calculadora {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        margin-top: 0.5rem;
+        background-color: #fff;
+        border-top: 5px solid var(--naranja);
+        box-shadow: 0 6px 6px -6px var(--box-shadow);
+        border-radius: 10px;
+        padding: 0.5rem;
+        color: var(--azul);
+    }
+
+    #cal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .conversion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #resultado {
+        font-weight: bold;
+        color: #000;
+    }
+
+    @media screen and (max-width:1200px) {
+        #calculadora {
+            max-width: 90%;
+        }
+    }
+</style>
+
+<script>
+    const buttons = document.querySelectorAll('button.calcularCarga');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const capacitancia = parseFloat(document.getElementById('capacitancia').value);
+            const voltaje = parseFloat(document.getElementById('voltaje').value);
+            const carga = capacitancia * voltaje;
+            document.getElementById('resultado').innerText = `La carga en el condensador es de ${carga} µC`;
+        });
+    });
+</script>
