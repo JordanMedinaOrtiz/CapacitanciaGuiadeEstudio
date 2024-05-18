@@ -34,4 +34,4 @@
   <li>Explora las diferentes secciones y funcionalidades de la página para aprender sobre capacitancia de manera interactiva y educativa.</li>
 </ol>
 <p>Este proyecto final de Física 2 representa un esfuerzo colaborativo para crear una herramienta educativa valiosa que pueda beneficiar a la comunidad interesada en el campo de la física. La documentación del repositorio puede incluir detalles adicionales sobre el contenido específico cubierto en la página y cómo utilizar las funcionalidades proporcionadas.</p>
-<p>Puedes ver la demostración del proyecto <a href="https://capable-tiramisu-28f699.netlify.app/">aquí</a></p>
+<p>Puedes ver la demostración del proyecto <a href="https://capacitancia.vercel.app/">aquí</a></p>
